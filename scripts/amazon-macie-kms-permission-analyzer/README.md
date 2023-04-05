@@ -14,7 +14,7 @@ For Macie to scan encrypted buckets, you need the following [Allow statement] to
 {
  "Sid": "Allow the Macie service-linked role to use the key",
  "Principal": {
-  "AWS": "...service-role/macie.amazonaws.com/AWSServiceRoleForAmazonMacie"
+  "AWS": "arn:aws:iam::<YOUR-ACCOUNT-NUMBER>:role/aws-service-role/macie.amazonaws.com/AWSServiceRoleForAmazonMacie"
   },
  "Action": ["kms:Decrypt"],
  "Effect": "Allow",
